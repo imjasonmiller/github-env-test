@@ -32,4 +32,4 @@ jobs:
         run: npm install
 
       - name: Script
-        run: node ./example-script.js
+        run: node ./example-script.js ${{ secrets.SuperSecret }}

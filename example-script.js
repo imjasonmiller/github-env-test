@@ -1,5 +1,5 @@
 import pc from "picocolors"
 
-console.log(
-  pc.green(`How are ${pc.italic(`you`)} doing?`)
-)
+if (process.argv[2]) {
+  console.log(`Passed argument was: ${pc.yellow(`${process.argv[2]}`)}`);
+}
